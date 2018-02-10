@@ -55,7 +55,7 @@ class TestBasicParsing(unittest.TestCase):
         self.assertEqual(['[meterTitle]', '[meterLabelDisk1]', '[meterValueDisk1]'], [str(measure) for measure in two_disk.get_all_in_group('metergroup2')])
     def test_import_tracking(self):
         welcome = self.illustro_collection['Welcome']['Welcome.ini']
-        path = 'E:\\Documents\\Dropbox\\fa 17\\242\\RainDesign\\unittesting\\illustro\\@Resources\\includefile.inc'
+        path = '.\\unittesting\\illustro\\@Resources\\includefile.inc'
         self.assertTrue( path in welcome.dependencies)
 if __name__ == '__main__':
     unittest.main()
